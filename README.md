@@ -65,8 +65,8 @@ You can also create the database by hand: in phpMyAdmin, open the **Import** tab
 
 | Username | Password | Role |
 |---|---|---|
-| `admin` | `admin123` | Administrator |
-| `attendant` | `attendant123` | Attendant |
+| `admin` | `Muhire123` | Administrator |
+| `attendant` | `Muhire123` | Attendant |
 
 Change these passwords after the first login.
 
