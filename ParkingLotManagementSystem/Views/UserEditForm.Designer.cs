@@ -1,0 +1,214 @@
+#nullable disable
+
+namespace ParkingLotManagementSystem.Views
+{
+    partial class UserEditForm
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            pnlHeader = new Panel();
+            lblTitle = new Label();
+            lblSubtitle = new Label();
+            lblFullName = new Label();
+            txtFullName = new TextBox();
+            lblUsername = new Label();
+            txtUsername = new TextBox();
+            lblRole = new Label();
+            cboRole = new ComboBox();
+            chkActive = new CheckBox();
+            lblPassword = new Label();
+            txtPassword = new TextBox();
+            lblConfirm = new Label();
+            txtConfirm = new TextBox();
+            lblHint = new Label();
+            btnSave = new Button();
+            btnCancel = new Button();
+            pnlHeader.SuspendLayout();
+            SuspendLayout();
+            pnlHeader.BackColor = Color.FromArgb(30, 58, 95);
+            pnlHeader.Controls.Add(lblTitle);
+            pnlHeader.Controls.Add(lblSubtitle);
+            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(0, 0);
+            pnlHeader.Name = "pnlHeader";
+            pnlHeader.Size = new Size(440, 64);
+            pnlHeader.TabIndex = 0;
+            lblTitle.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblTitle.ForeColor = Color.White;
+            lblTitle.Location = new Point(20, 6);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(410, 32);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Add User Account";
+            lblTitle.TextAlign = ContentAlignment.MiddleLeft;
+            lblSubtitle.Font = new Font("Segoe UI", 9F);
+            lblSubtitle.ForeColor = Color.FromArgb(200, 214, 229);
+            lblSubtitle.Location = new Point(20, 36);
+            lblSubtitle.Name = "lblSubtitle";
+            lblSubtitle.Size = new Size(410, 22);
+            lblSubtitle.TabIndex = 1;
+            lblSubtitle.Text = "Fields marked * are required";
+            lblSubtitle.TextAlign = ContentAlignment.MiddleLeft;
+            lblFullName.Location = new Point(30, 78);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(380, 23);
+            lblFullName.TabIndex = 1;
+            lblFullName.Text = "Full Name *";
+            lblFullName.TextAlign = ContentAlignment.MiddleLeft;
+            txtFullName.Location = new Point(30, 102);
+            txtFullName.MaxLength = 100;
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new Size(380, 25);
+            txtFullName.TabIndex = 2;
+            lblUsername.Location = new Point(30, 138);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(380, 23);
+            lblUsername.TabIndex = 3;
+            lblUsername.Text = "Username *";
+            lblUsername.TextAlign = ContentAlignment.MiddleLeft;
+            txtUsername.Location = new Point(30, 162);
+            txtUsername.MaxLength = 50;
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(380, 25);
+            txtUsername.TabIndex = 4;
+            lblRole.Location = new Point(30, 198);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(380, 23);
+            lblRole.TabIndex = 5;
+            lblRole.Text = "Role *";
+            lblRole.TextAlign = ContentAlignment.MiddleLeft;
+            cboRole.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboRole.Items.AddRange(new object[] { "Administrator", "Attendant" });
+            cboRole.Location = new Point(30, 222);
+            cboRole.Name = "cboRole";
+            cboRole.Size = new Size(380, 25);
+            cboRole.TabIndex = 6;
+            chkActive.Checked = true;
+            chkActive.CheckState = CheckState.Checked;
+            chkActive.Location = new Point(30, 260);
+            chkActive.Name = "chkActive";
+            chkActive.Size = new Size(380, 26);
+            chkActive.TabIndex = 7;
+            chkActive.Text = "Account is active";
+            chkActive.UseVisualStyleBackColor = true;
+            lblPassword.Location = new Point(30, 294);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(380, 23);
+            lblPassword.TabIndex = 8;
+            lblPassword.Text = "Password *";
+            lblPassword.TextAlign = ContentAlignment.MiddleLeft;
+            txtPassword.Location = new Point(30, 318);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(380, 25);
+            txtPassword.TabIndex = 9;
+            txtPassword.UseSystemPasswordChar = true;
+            lblConfirm.Location = new Point(30, 354);
+            lblConfirm.Name = "lblConfirm";
+            lblConfirm.Size = new Size(380, 23);
+            lblConfirm.TabIndex = 10;
+            lblConfirm.Text = "Confirm Password *";
+            lblConfirm.TextAlign = ContentAlignment.MiddleLeft;
+            txtConfirm.Location = new Point(30, 378);
+            txtConfirm.Name = "txtConfirm";
+            txtConfirm.Size = new Size(380, 25);
+            txtConfirm.TabIndex = 11;
+            txtConfirm.UseSystemPasswordChar = true;
+            lblHint.Font = new Font("Segoe UI", 9F);
+            lblHint.ForeColor = Color.FromArgb(120, 130, 140);
+            lblHint.Location = new Point(30, 408);
+            lblHint.Name = "lblHint";
+            lblHint.Size = new Size(380, 22);
+            lblHint.TabIndex = 12;
+            lblHint.Text = "The password must have at least 6 characters.";
+            lblHint.TextAlign = ContentAlignment.MiddleLeft;
+            btnSave.BackColor = Color.FromArgb(39, 174, 96);
+            btnSave.Cursor = Cursors.Hand;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(30, 442);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(185, 36);
+            btnSave.TabIndex = 13;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
+            btnCancel.BackColor = Color.FromArgb(108, 122, 137);
+            btnCancel.Cursor = Cursors.Hand;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnCancel.ForeColor = Color.White;
+            btnCancel.Location = new Point(225, 442);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(185, 36);
+            btnCancel.TabIndex = 14;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
+            AcceptButton = btnSave;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            BackColor = Color.FromArgb(244, 246, 249);
+            CancelButton = btnCancel;
+            ClientSize = new Size(440, 500);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(lblHint);
+            Controls.Add(txtConfirm);
+            Controls.Add(lblConfirm);
+            Controls.Add(txtPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(chkActive);
+            Controls.Add(cboRole);
+            Controls.Add(lblRole);
+            Controls.Add(txtUsername);
+            Controls.Add(lblUsername);
+            Controls.Add(txtFullName);
+            Controls.Add(lblFullName);
+            Controls.Add(pnlHeader);
+            Font = new Font("Segoe UI", 10F);
+            ForeColor = Color.FromArgb(44, 62, 80);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "UserEditForm";
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Add User";
+            pnlHeader.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        private Panel pnlHeader;
+        private Label lblTitle;
+        private Label lblSubtitle;
+        private Label lblFullName;
+        private TextBox txtFullName;
+        private Label lblUsername;
+        private TextBox txtUsername;
+        private Label lblRole;
+        private ComboBox cboRole;
+        private CheckBox chkActive;
+        private Label lblPassword;
+        private TextBox txtPassword;
+        private Label lblConfirm;
+        private TextBox txtConfirm;
+        private Label lblHint;
+        private Button btnSave;
+        private Button btnCancel;
+    }
+}
